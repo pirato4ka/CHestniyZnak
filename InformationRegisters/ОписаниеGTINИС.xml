@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<InformationRegister uuid="1bb95d33-81c1-4293-9599-ff855a1f9ae0">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ОписаниеGTINИС" category="Record">
+				<xr:TypeId>6829c1cb-7296-4520-8513-18e780b14869</xr:TypeId>
+				<xr:ValueId>53f01d7b-c7ed-4143-ba7c-806ef1ee0bc3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ОписаниеGTINИС" category="Manager">
+				<xr:TypeId>37002e0a-d0d6-4de9-97e3-9d3407efb028</xr:TypeId>
+				<xr:ValueId>5d38b08e-057d-4b96-bbbf-de7cdfedb40b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ОписаниеGTINИС" category="Selection">
+				<xr:TypeId>2790fba4-d993-4cbb-a454-87750907474c</xr:TypeId>
+				<xr:ValueId>b2afaf7a-e911-4d65-9e9c-7fda1d5e18c8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ОписаниеGTINИС" category="List">
+				<xr:TypeId>aadf85b9-5654-4221-a22e-f009223d77c1</xr:TypeId>
+				<xr:ValueId>764a8250-a223-4d34-868b-2990073a0e85</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ОписаниеGTINИС" category="RecordSet">
+				<xr:TypeId>023ddb40-b8c6-449f-8756-5c1699e11eba</xr:TypeId>
+				<xr:ValueId>000c4bac-913a-41f8-88d6-23c3f8d5bda8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ОписаниеGTINИС" category="RecordKey">
+				<xr:TypeId>a3a93a40-035d-4804-987b-51432038e3a1</xr:TypeId>
+				<xr:ValueId>848775d4-53ec-4979-a0f0-1c813aeda1f3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ОписаниеGTINИС" category="RecordManager">
+				<xr:TypeId>be0028fc-3496-42eb-a7d7-28a185fbb655</xr:TypeId>
+				<xr:ValueId>bcf1ab7a-4318-4e69-a167-15b1158483ba</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ОписаниеGTINИС</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>6915ea66-71d8-4dc5-b334-3be6e13e4c77</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects/>
+	</InformationRegister>
+</MetaDataObject>

@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапки" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>HorizontalIfPossible</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкиРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<InputField name="ПериодЗаполнения" id="25">
+					<DataPath>ПериодЗаполнения</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПериодЗаполненияКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ПериодЗаполненияРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<Button name="ДокументыОтгрузкиЗаполнитьДокументы" id="23">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗаполнитьДокументы</CommandName>
+					<ExtendedTooltip name="ДокументыОтгрузкиЗаполнитьДокументыРасширеннаяПодсказка" id="24"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ДокументыОтгрузки" id="1">
+			<Representation>List</Representation>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ДокументыОтгрузки</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДокументыОтгрузкиКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ДокументыОтгрузкиКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ДокументыОтгрузкиЗаполнитьКодыМаркировкиВДокументах" id="30">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьКодыМаркировкиВДокументах</CommandName>
+						<ExtendedTooltip name="ДокументыОтгрузкиЗаполнитьКодыМаркировкиВДокументахРасширеннаяПодсказка" id="31"/>
+					</Button>
+					<Button name="ДокументыОтгрузкиОчиститьКодыМаркировкиВДокументах" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОчиститьКодыМаркировкиВДокументах</CommandName>
+						<ExtendedTooltip name="ДокументыОтгрузкиОчиститьКодыМаркировкиВДокументахРасширеннаяПодсказка" id="33"/>
+					</Button>
+					<Button name="ДокументыОтгрузкиУстановитьОтветственного" id="40">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УстановитьОтветственного</CommandName>
+						<ExtendedTooltip name="ДокументыОтгрузкиУстановитьОтветственногоРасширеннаяПодсказка" id="41"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДокументыОтгрузкиРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ДокументыОтгрузкиСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ДокументыОтгрузки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыОтгрузкиСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ДокументыОтгрузкиСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДокументыОтгрузкиСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ДокументыОтгрузки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыОтгрузкиСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ДокументыОтгрузкиСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДокументыОтгрузкиУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ДокументыОтгрузки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыОтгрузкиУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ДокументыОтгрузкиУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ДокументыОтгрузкиНомерСтроки" id="14">
+					<DataPath>Объект.ДокументыОтгрузки.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ДокументыОтгрузкиНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ДокументыОтгрузкиНомерСтрокиРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<CheckBoxField name="ДокументыОтгрузкиКодыЗаполнены" id="34">
+					<DataPath>Объект.ДокументыОтгрузки.КодыЗаполнены</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ДокументыОтгрузкиКодыЗаполненыКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ДокументыОтгрузкиКодыЗаполненыРасширеннаяПодсказка" id="36"/>
+				</CheckBoxField>
+				<InputField name="ДокументыОтгрузкиКоличествоКодов" id="37">
+					<DataPath>Объект.ДокументыОтгрузки.КоличествоКодов</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДокументыОтгрузкиКоличествоКодовКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ДокументыОтгрузкиКоличествоКодовРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="ДокументыОтгрузкиДокумент" id="17">
+					<DataPath>Объект.ДокументыОтгрузки.Документ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДокументыОтгрузкиДокументКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ДокументыОтгрузкиДокументРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ДокументыОтгрузкиКонтрагент" id="20">
+					<DataPath>Объект.ДокументыОтгрузки.Контрагент</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДокументыОтгрузкиКонтрагентКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДокументыОтгрузкиКонтрагентРасширеннаяПодсказка" id="22"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.БНС_ЗаполнениеМаркировкиДокументыОтгрузки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПериодЗаполнения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период заполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДокументыОтгрузкиКодыЗаполнены</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДокументыОтгрузкиКоличествоКодов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ДокументыОтгрузки.КодыЗаполнены</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#CCFFCC</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДокументыОтгрузкиКодыЗаполнены</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДокументыОтгрузкиКоличествоКодов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ДокументыОтгрузки.КодыЗаполнены</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьДокументы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьДокументы</Action>
+		</Command>
+		<Command name="ОчиститьКодыМаркировкиВДокументах" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить коды маркировки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить коды маркировки в документах</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьКодыМаркировкиВДокументах</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗаполнитьКодыМаркировкиВДокументах" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить коды маркировки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить коды маркировки в документах</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьКодыМаркировкиВДокументах</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="УстановитьОтветственного" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить ответственного</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить ответственного</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьОтветственного</Action>
+		</Command>
+	</Commands>
+</Form>
