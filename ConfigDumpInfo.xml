@@ -49,7 +49,7 @@
 		<Metadata name="Document.РеализацияТоваровУслуг.Form.ФормаДокументаОбщая" id="19eccc4b-ff50-4942-aba1-ba209e82dad7" configVersion="8e71d46a06fe30edd751c3457ed810143a250b72"/>
 		<Metadata name="Document.РеализацияТоваровУслуг.Form.ФормаДокументаОбщая.Form" id="19eccc4b-ff50-4942-aba1-ba209e82dad7.0" configVersion="628983dd5752975559a77deb295b513d60de6a52"/>
 		<Metadata name="Document.РеализацияТоваровУслуг.Form.ФормаДокументаТовары" id="2a631fdc-2eb1-474d-82fb-d14a0eed8c5b" configVersion="a427eaeff2f85b1eaab0e2d886d9a2b5465ee6f8"/>
-		<Metadata name="Document.РеализацияТоваровУслуг.Form.ФормаДокументаТовары.Form" id="2a631fdc-2eb1-474d-82fb-d14a0eed8c5b.0" configVersion="e8fb211f859cd6bece3ff24fe4a47226f0b01c7f"/>
+		<Metadata name="Document.РеализацияТоваровУслуг.Form.ФормаДокументаТовары.Form" id="2a631fdc-2eb1-474d-82fb-d14a0eed8c5b.0" configVersion="23593b5a40a12075fb67926337f3c9a717b89704"/>
 		<Metadata name="Enum.ВидыДоговоровКонтрагентов" id="6eb5a3cf-422c-4750-894b-6a330369b586" configVersion="9ada8508bd9463cbe47817e285a9e128dfbc4a3a">
 			<Metadata name="Enum.ВидыДоговоровКонтрагентов.EnumValue.СПокупателем" id="3891c9b4-e0fa-47e8-932a-f0ca8d4b8541"/>
 		</Metadata>
